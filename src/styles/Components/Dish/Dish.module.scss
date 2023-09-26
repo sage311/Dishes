@@ -1,0 +1,34 @@
+.DishList{
+  &__container{
+    display: flex;
+    gap: 30px;
+    &-item{
+      border: 1px solid black;
+      padding: 30px;
+      border-radius: 12 px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      &-delete{
+      font-size:24px;
+      cursor: pointer;
+      }
+      &-delete{
+        svg{
+        transition: all 200ms linear;
+        }
+      }
+      &-delete:hover{
+        svg{
+          fill: red;
+        }
+      }
+      &-delete:active{
+        svg{
+          fill: white;
+          
+          }
+        }
+     }
+  }
+}
